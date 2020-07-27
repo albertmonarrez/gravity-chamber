@@ -21,5 +21,7 @@ class TestMoveFiles(unittest.TestCase):
     def test_routine_3(self):
         " "
 
-    def test_backup_files(self):
-        " "
+    def test_routine_6(self):
+        file_manager = move_files.MoveSaveFiles()
+        file_manager.move_files(6)
+        print('does a thing')

@@ -22,7 +22,7 @@ class MoveSaveFiles:
     def backup(self, save_file: pathlib.WindowsPath) -> None:
         """Backs up the current save file to backup folder"""
         if self.backup_directory.exists():
-            name = f"{datetime.datetime.now().strftime('%Y-%m-%d %H-%M')} {save_file.name}"
+            name = f"{datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')} {save_file.name}"
             save_copy = Path(self.backup_directory, name)
             return shutil.copy2(save_file, save_copy)
 
