@@ -10,5 +10,7 @@ ROUTINES = {
     1: r'DEFENSIVE ROUTINE Level 2 (MEDIUM) (done)\SYSTEM.sav',
     2: r'DEFENSIVE ROUTINE Level 3 (EXTREME) (done)\SYSTEM.sav',
     3: r'DEFENSIVE ROUTINE SOLO Level 1 (HARD) (done)\SYSTEM.sav',
+    4: r'universal tech\Anti - Close Range SD Practice (done)\SYSTEM.sav',
+    5: r'universal tech\Oki testing practice (done)\SYSTEM.sav',
     6: r'a Backup folder\SYSTEM.sav',
 }

@@ -12,10 +12,10 @@ class MoveSaveFiles:
         self.routines_path = config.ROUTINE_BASE_PATH
         self.backup_directory = Path(config.BACKUP_SAVE_PATH)
 
-    def move_files(self, routine_key: int):
+    def move_files(self, routine_number: int):
         if self.current_save_file.exists():
             self.backup(self.current_save_file)
-            routine = Path(self.routines_path, config.ROUTINES.get(routine_key))
+            routine = Path(self.routines_path, config.ROUTINES.get(routine_number))
             if routine.exists():
                 shutil.copy2(routine, self.current_save_file)
 
