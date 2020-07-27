@@ -18,6 +18,7 @@ class MoveSaveFiles:
             routine = Path(self.routines_path, config.ROUTINES.get(routine_number))
             if routine.exists():
                 shutil.copy2(routine, self.current_save_file)
+                print(f"Moved routine: {routine}")
 
     def backup(self, save_file: pathlib.WindowsPath) -> None:
         """Backs up the current save file to backup folder"""
