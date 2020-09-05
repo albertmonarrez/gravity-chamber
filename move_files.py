@@ -5,7 +5,7 @@ import shutil
 import datetime
 
 
-class MoveSaveFiles:
+class SaveFileMover:
     def __init__(self):
         self.save_folder = config.Z_SAVE_FOLDER_PATH
         self.current_save_file = Path(self.save_folder, config.SAVE_FILE_NAME)
